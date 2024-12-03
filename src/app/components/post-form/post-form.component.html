@@ -1,0 +1,25 @@
+<div class="container">
+    <form (ngSubmit)="savePost()">      
+        <div>
+        <label for="postTitle">Título</label>
+        <input
+          type="text"
+          id="postTitle" [(ngModel)]="post.title" name="title"
+          required
+        />
+      </div>
+  
+      <div>
+        <label for="postBody">Conteúdo da postagem</label>
+        <input
+          type="text"
+          id="postBody"
+          [(ngModel)]="post.body"
+          name="price"
+          required
+        />
+      </div>
+  
+      <button type="submit">Adicionar</button>
+    </form>
+  </div>
